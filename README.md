@@ -12,10 +12,6 @@ AzzleAI is a modern, high-performance web application built using React. This pr
 
 ---
 
-## 🛠️ Installation
-
-Clone the repository and install dependencies:
-
 ## 🛠 Installation & Development
 
 Clone the repository, install dependencies, and start the development server:

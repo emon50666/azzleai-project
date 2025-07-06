@@ -54,12 +54,12 @@ function Testimonial() {
       <h2 className="text-center text-2xl md:text-7xl font-black mb-8">Positive feedback  <br />from our users</h2>
 
       {/* Arrows */}
-      <div className="absolute left-70 bottom-[30%] transform   z-10">
+      <div className="absolute left-10 lg:left-70 md:left-10 bottom-[4%] lg::bottom-[30%] md:bottom-[30%] transform   z-10">
         <button ref={prevRef} className="bg-[#1a1e2e] p-3 rounded-full hover:bg-white hover:text-black transition">
           <IoIosArrowBack size={24} />
         </button>
       </div>
-      <div className="absolute right-70 bottom-[30%] transform   z-10">
+      <div className="absolute right-10 lg:right-70 md:right-10 bottom-[4%] lg:bottom-[30%] md:bottom-[30%] transform   z-10">
         <button ref={nextRef} className="bg-[#1a1e2e] p-3 rounded-full hover:bg-white hover:text-black transition">
           <IoIosArrowForward size={24} />
         </button>

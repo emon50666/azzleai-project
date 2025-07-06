@@ -1,74 +1,90 @@
-import { useState } from "react";
-import PricingCard from "../cards/PricingCard";
-import { monthlyPlans, annuallyPlans } from "../../utils/constants";
-import MaxWidthWrapper from "../shared/MaxWidthWrapper";
-import AnimatonVariants from "../shared/AnimatonVariants";
+import bgimg from"../../assets/images/bg.png"
+import card_1 from"../../assets/images/card_1.png"
+import card_2 from"../../assets/images/card_2.png"
+import card_3 from"../../assets/images/card_3.png"
+import card_4 from"../../assets/images/card_4.png"
 
-const PricingSection = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-  const plans = isMonthly ? monthlyPlans : annuallyPlans;
 
+
+
+  const cardData = [
+  {
+    category: "Past",
+    title: "Builder House Singapore 2024",
+    buttonText: "Watch recap",
+    image: card_1,
+  },
+  {
+    category: "Past",
+    title: "Korean Blockchain Week 2024",
+    buttonText: "Watch recap",
+    image: card_2,
+  },
+  {
+    category: "Past",
+    title: "Singapore",
+    buttonText: "Read recap",
+    image: card_3,
+  },
+  {
+    category: "Past",
+    title: "Kyoto",
+    buttonText: "Read recap",
+    image: card_4,
+  }
+];
+
+
+function PricingSection() {
   return (
-    <section className=" bg-white lg:py-24 py-15 relative overflow-clip">
-      <div class="orange-gradient-1 absolute h-[600px] w-[400px] -rotate-[-9.022deg] rounded-[400px] sm:to-0%  top-[18%] lg:hidden block"></div>
+    <section
+      className="relative w-full bg-cover bg-center bg-no-repeat text-white py-16"
+      style={{ backgroundImage: `url(${bgimg})` }}
+    >
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
-      <MaxWidthWrapper>
-        <div className="relative z-50">
-          <div className="lg:max-w-3xl sm:max-w-[364px] mx-auto">
-            <AnimatonVariants>
-              <h2 className="text-[36px] font-secondary leading-10 text-primary font-bold text-center lg:text-[80px] lg:leading-[90px]">
-                Cost-effectively build any software
-              </h2>
-            </AnimatonVariants>
-          </div>
-          {/* Toggle */}
-          <div className="container mx-auto font-primary mt-10 ">
-            <div className="flex justify-center">
-              <div className="inline-flex space-x-2 rounded-full border-2 border-black font-semibold">
-                <button
-                  className={`px-8 py-3 text-lg rounded-full transition-all duration-300 ${
-                    isMonthly
-                      ? "bg-black text-white"
-                      : "bg-transparent text-black hover:bg-gray-100"
-                  }`}
-                  onClick={() => setIsMonthly(true)}
-                >
-                  Monthly
-                </button>
-                <button
-                  className={`px-8 py-3 text-lg rounded-full transition-all duration-300 ${
-                    !isMonthly
-                      ? "bg-black text-white"
-                      : "bg-transparent text-black hover:bg-gray-100"
-                  }`}
-                  onClick={() => setIsMonthly(false)}
-                >
-                  Annually
-                </button>
-              </div>
-            </div>
-
-            {/* Pricing Cards */}
-
-            <div className="mt-12 lg:mt-16 xl:mt-20">
-              <AnimatonVariants
-                animation="fade-right"
-                delay={0.5}
-                duration={0.5}
-                className="mt-12"
-              >
-                <ul className=" grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {plans.map((plan, idx) => (
-                    <PricingCard key={idx} plan={plan} />
-                  ))}
-                </ul>
-              </AnimatonVariants>
-            </div>
-          </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-6xl text-gray-300 font-semibold">Connect with Sui builders</h2>
+          <p className="mt-4 text-xl max-w-md mx-auto text-gray-400">
+            Sui community events provide opportunities to connect, network, and share ideas
+          </p>
         </div>
-      </MaxWidthWrapper>
-    </section>
-  );
-};
 
-export default PricingSection;
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+          {cardData.map((card, idx) => (
+  <div
+  key={idx}
+  className="relative overflow-hidden rounded-xl h-48 w-full group"
+>
+  {/* Zoomable Background */}
+  <div
+    className="absolute inset-0 bg-center bg-cover transition-transform duration-500 scale-100 group-hover:scale-110"
+    style={{ backgroundImage: `url(${card.image})` }}
+  ></div>
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50 z-10" />
+
+  {/* Content Layer */}
+  <div className="absolute inset-0 flex flex-col justify-between z-20 p-4 text-white">
+    <span className="text-xs bg-white/20 px-2 py-1 rounded-full w-fit uppercase">
+      {card.category}
+    </span>
+    <h3 className="text-xl font-semibold">{card.title}</h3>
+    <button className="text-gray-200 font-bold text-mg text-start cursor-pointer">
+      {card.buttonText} →
+    </button>
+  </div>
+</div>
+
+
+
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default PricingSection

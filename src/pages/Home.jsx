@@ -4,6 +4,7 @@ import AudienceSection from "../components/sections/AudienceSection";
 import VideoPlayer from "../components/sections/VideoPlayer";
 import PricingSection from "../components/sections/PricingSection";
 import TestimonialSection from "../components/sections/TestimonialSection";
+import Testimonial from "../components/sections/Testimonial";
 const Home = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Home = () => {
       <AudienceSection />
       <VideoPlayer isGradient={true} />
       <PricingSection />
+      <Testimonial/>
       <TestimonialSection />
     </>
   );

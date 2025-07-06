@@ -11,14 +11,14 @@ const testimonials = [
   {
     image: "https://swiperjs.com/demos/images/nature-1.jpg",
     name: "John Doe",
-    designation: "CEO, Example Inc.",
+    designation: "CEO",
     rating: 5,
     description: "“This AI SaaS tool has revolutionized the way we process and analyze data. This is a game-changer for our business.”",
   },
   {
     image: "https://swiperjs.com/demos/images/nature-2.jpg",
     name: "Jane Smith",
-    designation: "Product Manager, TechCo",
+    designation: "Product Manager",
     rating: 5,
     description: "“It answers immediately, and we've seen a significant reduction in response time. Our customers love it and so do we!”",
   },
@@ -95,7 +95,7 @@ function Testimonial() {
         {testimonials.map((review, index) => (
           <SwiperSlide
             key={index}
-            className="   bg-gradient-to-br from-[#1d2633] to-[#000000] my-auto border border-gray-900  rounded-2xl p-6 shadow-xl text-left flex flex-col items-center transition-all duration-500 ease-in-out  scale-85    "
+            className=" md:pt-12  bg-gradient-to-br from-[#1d2633] to-[#000000] my-auto border border-gray-900  rounded-2xl p-6 shadow-xl text-left flex flex-col items-center transition-all duration-500 ease-in-out  scale-85    "
           >
             
            
@@ -104,7 +104,7 @@ function Testimonial() {
                 <FaStar key={i} />
               ))}
             </div>
-             <p className="text-xl text-gray-200 text-start mb-4">"{review.description}"</p>
+             <p className="md:text-xl text-gray-200 text-start mb-4">"{review.description}"</p>
 
           <div className="flex  gap-4 items-center">
              <div>

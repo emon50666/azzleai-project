@@ -16,12 +16,17 @@ AzzleAI is a modern, high-performance web application built using React. This pr
 
 Clone the repository and install dependencies:
 
+## 🛠 Installation & Development
+
+Clone the repository, install dependencies, and start the development server:
+
 ```bash
 git clone https://github.com/emon50666/azzleai-project.git
 cd azzleai-project
 npm install
 
-``` run the server
+# Run the development server
 npm run dev
 ```
+
 

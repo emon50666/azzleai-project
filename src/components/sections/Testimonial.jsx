@@ -51,7 +51,7 @@ function Testimonial() {
 
   return (
     <div className="relative py-16  px-4 bg-[#05060c] text-white">
-      <h2 className="text-center text-2xl md:text-7xl font-black mb-8">Positive feedback  <br />from our users</h2>
+      <h2 className="text-center text-2xl md:text-7xl font-black mb-8">Positive feedback dfds  <br />from our users</h2>
 
       {/* Arrows */}
       <div className="absolute left-70 bottom-[30%] transform   z-10">

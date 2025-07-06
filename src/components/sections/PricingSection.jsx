@@ -4,9 +4,6 @@ import card_2 from"../../assets/images/card_2.png"
 import card_3 from"../../assets/images/card_3.png"
 import card_4 from"../../assets/images/card_4.png"
 
-
-
-
   const cardData = [
   {
     category: "Past",

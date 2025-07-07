@@ -335,23 +335,23 @@ export const coreValues = [
   {
     icon: CoreValueIcon1,
     title: "Innovation",
-    description: "We’re committed to exploring new technologies, and finding",
+    description: "User Ownership & Control We empower users to fully own and control their content and data without intermediaries or centralized authority",
   },
   {
     icon: CoreValueIcon2,
     title: "Excellence",
-    description: "We set high standards for our work & we are dedicated team",
+    description: "Transparency & Trust Our platform operates on an open, secure blockchain ensuring every interaction and reward to be transparent and verifiable",
   },
   {
     icon: CoreValueIcon3,
     title: "Collaboration",
-    description: "We believe in the power of collaboration, working closely",
+    description: "Fairness & Reward Creators are directly and fairly compensated through our native token, fostering an equitable and sustainable digital economy",
   },
   {
     icon: CoreValueIcon4,
     title: "Integrity",
     description:
-      "We uphold the highest ethical honesty in all our interactions",
+      "Innovation & Intelligence We fuse advanced AI with blockchain technology to deliver smart content discovery, dynamic personalization, and continuous ecosystem evolution.",
   },
 ];
 export const teamMembers = [

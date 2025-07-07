@@ -11,7 +11,7 @@ const AboutClientSection = () => {
       <AnimatonVariants animation="fade-up" delay={0.3}>
         <div className="sm:max-w-md mx-auto lg:max-w-5xl">
           <h3 className="text-[36px] font-secondary text-center leading-10 font-bold lg:text-[80px] lg:leading-[80px]">
-            We are a trusted partner in our clients' AI journey
+           Harvest AI is a user-owned, AI-powered social platform.
           </h3>
         </div>
       </AnimatonVariants>
@@ -55,16 +55,12 @@ const AboutClientSection = () => {
             </h2>
 
             <p className="text-primary font-primary text-lg mt-5">
-              Our mission is to empower businesses with AI-powered solutions
-              that increase productivity, improve decision-making and drive
-              growth.
+             Harvest AI introduces a next-generation social platform that prioritizes freedom, privacy, and fairness. 
+             <p>Built on blockchain and powered by AI, it enables individuals to share, connect, and earn—without relying on centralized systems or giving up control.
+</p>
             </p>
 
-            <p className="text-primary font-primary text-lg mt-5">
-              Since 2016 we have been passionate about helping our clients
-              harness With a team of AI experts and data scientists their full
-              potential & stay competitive in an increasingly digital world.
-            </p>
+           
 
             <div className="mt-5 sm:mt-10">
               <Link to="/contact">

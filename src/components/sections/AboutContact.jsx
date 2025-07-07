@@ -34,7 +34,8 @@ const AboutContact = () => {
             <div>
               <div className="mb-6">
                 <h2 className="text-white text-[36px] leading-10 font-secondary font-bold lg:text-[79px] lg:leading-[80px]">
-                  We always want to connect our clients
+                  Our goal is to foster meaningful relationships with our users.
+
                 </h2>
               </div>
 
@@ -47,25 +48,25 @@ const AboutContact = () => {
               </div>
 
               <ul className="mt-10 flex flex-col gap-6 font-secondary text-[30px] tracking-[1.33] lg:mt-14 lg:gap-y-3 xl:mt-[70px]">
-                <li className="flex flex-col gap-x-2 leading-tight text-red-500 lg:flex-row lg:leading-normal font-bold items-center">
+                <li className="flex flex-col gap-x-2 leading-tight text-[#2A8EED] lg:flex-row lg:leading-normal font-bold items-center">
                   Website:
                   <Link
                     rel="noopener noreferrer"
-                    className="text-white hover:text-red-500 mt-1"
+                    className="text-white hover:text-[#2A8EED] mt-1"
                     to="/"
                   >
                     www.example.com
                   </Link>
                 </li>
-                <li className="flex flex-col gap-x-2 leading-tight text-red-500 lg:flex-row lg:leading-normal font-bold items-center">
+                <li className="flex flex-col gap-x-2 leading-tight text-[#2A8EED] lg:flex-row lg:leading-normal font-bold items-center">
                   Email:
-                  <Link to="/" className="text-white hover:text-red-500 mt-1">
+                  <Link to="/" className="text-white hover:text-[#2A8EED] mt-1">
                     yourmail@mail.com
                   </Link>
                 </li>
-                <li className="flex flex-col gap-x-2 leading-tight text-red-500 lg:flex-row lg:leading-normal font-bold items-center">
+                <li className="flex flex-col gap-x-2 leading-tight text-[#2A8EED] lg:flex-row lg:leading-normal font-bold items-center">
                   Phone:
-                  <Link to="/" className="text-white hover:text-red-500">
+                  <Link to="/" className="text-white hover:text-[#2A8EED]">
                     +880 1345-922210
                   </Link>
                 </li>

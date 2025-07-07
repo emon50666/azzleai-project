@@ -18,13 +18,14 @@ const Contact = () => {
               <div className="order-2 flex flex-col md:order-1">
                 <div className="mb-8 text-left lg:mb-16 xl:mb-6">
                   <h2 className="text-[36px] leading-10 font-bold font-secondary tracking-tight text-primary lg:text-[80px] lg:leading-[80px] lg:tracking-tight">
-                    Get in touch with us directly
+                    Reach out to us
+
                   </h2>
                 </div>
                 <div className="text-lg leading-[1.4] lg:text-[21px] ">
                   <p className="mb-7 font-primary text-primary">
-                    We are here to help you! Tell us how we can help & we'll be
-                    in touch with an expert within the next 24 hours.
+                   Get connected with us and let’s start the conversation today!
+
                   </p>
                   <ul className="mt-12 flex flex-col gap-y-8 lg:gap-y-12">
                     <li className="flex flex-col gap-y-4 text-2xl font-extrabold font-inter tracking-tighter text-primary">

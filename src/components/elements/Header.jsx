@@ -90,13 +90,13 @@ const Header = () => {
           {item.link ? (
             <Link
               to={item.link}
-              className="flex items-center gap-1 hover:text-orange-500"
+              className="flex items-center gap-1 hover:text-[#2C8FED]"
             >
               {item.label}
               {item.children && <ChevronRight className="w-4 h-4 ml-1" />}
             </Link>
           ) : (
-            <span className="flex items-center gap-1 cursor-pointer hover:text-orange-500">
+            <span className="flex items-center gap-1 cursor-pointer hover:text-[#2C8FED]">
               {item.label}
               {item.children && <ChevronRight className="w-4 h-4 ml-1" />}
             </span>

@@ -187,25 +187,25 @@ export const LogoTickerItems = [
 export const FeaturesItems = [
   {
     title: "Resource Flexibility",
-    desc: "This is an excellent option for people &amp; small businesses who are starting out.",
+    desc: "AI Integration: We offer smart, secure, and transparent solutions for authority and efficiency.",
     icon: FeatureOne,
     orangeicon: FeatureOrangeOne,
   },
   {
     title: "Managed Services",
-    desc: "This is an excellent option for people &amp; small businesses who are starting out.",
+    desc: "Social Ecosystem: It establishes a decentralised social environment that assures privacy and control.",
     icon: FeatureTwo,
     orangeicon: FeatureOrangeTwo,
   },
   {
     title: "Web-Based Access",
-    desc: "This is an excellent option for people &amp; small businesses who are starting out.",
+    desc: "Reward-Driven: Users are incentivized through a well established rewards system, encouraging their active participation",
     icon: FeatureThree,
     orangeicon: FeatureOrangeThree,
   },
   {
     title: "Resource Flexibility",
-    desc: "This is an excellent option for people &amp; small businesses who are starting out.",
+    desc: "Scalable Capability: Its architecture supports evolving technologies and expanding communities to the fullest",
     icon: FeatureFour,
     orangeicon: FeatureOrangeFour,
   },
@@ -251,45 +251,86 @@ export const testimonials = [
   },
 ];
 export const footerPrimaryPages = [
+ 
   {
-    page: "Home",
-    path: "/",
-  },
-  {
-    page: "About Us",
+    page: "Harvest Hub",
     path: "/about",
   },
   {
-    page: "Services",
+    page: "Harvest Chain",
     path: "/services",
   },
   {
-    page: "Pricing",
+    page: "HVT Coin",
     path: "/pricing",
   },
   {
-    page: "Contact",
+    page: "Bridge",
     path: "/contact",
   },
 ];
+
+// legal
 export const footerUtilitiesPages = [
   {
-    page: "Signup",
+    page: "Whitepaper",
     path: "/signup",
   },
   {
-    page: "Login",
+    page: "Tokenomics",
     path: "/login",
   },
   {
-    page: "404 Not found",
+    page: "Developer Docs / API",
     path: "/notfound",
   },
   {
-    page: "Password Reset",
+    page: "FAQs",
     path: "/reset",
   },
 ];
+
+
+
+
+export const footerLegalPages = [
+  {
+    page: "Terms of Use",
+    path: "/terms",
+  },
+  {
+    page: "Privacy Policy",
+    path: "/privacy",
+  },
+  {
+    page: "Disclaimer",
+    path: "/disclaimer",
+  },
+  {
+    page: "Cookie Policy",
+    path: "/cookie",
+  },
+];
+
+
+// Get Involved 
+export const footerGetInvolvedPages = [
+  {
+    page: "Join the Community (Discord, Telegram, X/Twitter)",
+    path: "#",
+  },
+  {
+    page: "Become a Creator",
+    path: "/Become-a-Creator",
+  },
+  
+  {
+    page: "Contact Us",
+    path: "/contact",
+  },
+];
+
+
 export const coreValues = [
   {
     icon: CoreValueIcon1,

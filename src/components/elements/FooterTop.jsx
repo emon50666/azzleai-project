@@ -31,7 +31,7 @@ const FooterTop = () => {
               className="h-10 w-10 lg:h-[60px] lg:w-[60px] shrink-0"
             />
             <div className="block font-secondary text-4xl font-bold leading-none -tracking-[1px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
-              Start building software
+             Start engaging, start earning, and start evolving
             </div>
           </div>
         ))}

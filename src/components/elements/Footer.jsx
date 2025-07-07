@@ -4,6 +4,11 @@ import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 import FooterTop from "./FooterTop";
 import { footerPrimaryPages } from "../../utils/constants";
 import { footerUtilitiesPages } from "../../utils/constants";
+import { footerLegalPages } from "../../utils/constants";
+import { footerGetInvolvedPages } from "../../utils/constants";
+
+
+
 
 const Footer = () => {
   return (
@@ -22,26 +27,25 @@ const Footer = () => {
                 <img src={logo} alt="logo" width={96} height={24} />
               </a>
               <p className="text-lg font-primary">
-                Our mission is to harness the power of AI to solve complex
-                business challenges & decision-makers with data-driven insights,
-                and enhance user experiences across digital platforms.
+               At Harvest AI, we are building a future where every voice is valued, every action is rewarded, and every user owns their digital identity.
+
               </p>
-              <p className="text-lg font-primary">
+              {/* <p className="text-lg font-primary">
                 Website: <a href="/">www.example.com</a>
-              </p>
+              </p> */}
             </div>
 
             {/* Primary Pages */}
             <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Primary Pages
+                Platform 
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
                 {footerPrimaryPages.map((item, i) => (
                   <li key={i}>
                     <a
                       href={item.path}
-                      className="transition-all duration-300 ease-linear hover:text-red-500 text-lg font-primary"
+                      className="transition-all duration-300 ease-linear hover:text-[#298DED] text-lg font-primary"
                     >
                       {item.page}
                     </a>
@@ -53,14 +57,54 @@ const Footer = () => {
             {/* Utility Pages */}
             <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Utility Pages
+                Ecosystem 
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
                 {footerUtilitiesPages.map((item, i) => (
                   <li key={i}>
                     <a
                       href={item.path}
-                      className="transition-all duration-300 ease-linear hover:text-red-500 text-lg font-primary"
+                      className="transition-all duration-300 ease-linear hover:text-[#298DED] text-lg font-primary"
+                    >
+                      {item.page}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+              {/* legal  */}
+             <div className="flex flex-col gap-y-6">
+              <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
+                Legal  
+              </h4>
+              <ul className="flex flex-col gap-y-[10px] capitalize">
+                {footerLegalPages.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.path}
+                      className="transition-all duration-300 ease-linear hover:text-[#298DED] text-lg font-primary"
+                    >
+                      {item.page}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+
+
+              {/* Get Involved   */}
+             <div className="flex flex-col gap-y-6">
+              <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
+                Get Involved   
+              </h4>
+              <ul className="flex flex-col gap-y-[10px] capitalize">
+                {footerGetInvolvedPages.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.path}
+                      className="transition-all duration-300 ease-linear hover:text-[#298DED] text-lg font-primary"
                     >
                       {item.page}
                     </a>
@@ -85,7 +129,7 @@ const Footer = () => {
                   />
                   <button
                     type="submit"
-                    className="absolute right-[5px] top-1/2 -translate-y-1/2 inline-block h-10 rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500 "
+                    className="absolute right-[5px] top-1/2 -translate-y-1/2 inline-block h-10 rounded-[50px] bg-[#298DED] px-6 transition-all hover:bg-[#030F16] "
                   >
                     <img src={arrowRight} alt="submit" />
                   </button>

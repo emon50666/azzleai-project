@@ -80,7 +80,7 @@ const NestedSubMenu = ({ item, closeAll }) => {
       <Link
         to={item.path || "#"}
         onClick={closeAll}
-        className="flex items-center justify-between text-primary hover:text-red-500 px-2 py-1 rounded-md transition-all duration-200 whitespace-nowrap font-secondary font-semibold"
+        className="flex items-center justify-between text-primary hover:text-[#2C8FED] px-2 py-1 rounded-md transition-all duration-200 whitespace-nowrap font-secondary font-semibold"
       >
         {item.name}
         {hasSubMenu && <ChevronRight size={16} />}

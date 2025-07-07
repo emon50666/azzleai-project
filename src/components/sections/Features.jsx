@@ -10,7 +10,8 @@ const Features = () => {
         <div className="lg:max-w-2xl">
           <AnimatonVariants>
             <h2 className="text-primary text-[36px] leading-[40px]  font-bold lg:text-[72px] lg:leading-[80px] font-secondary">
-              Core features that make it valuable
+             Core strengths that set it apart
+
             </h2>
           </AnimatonVariants>
         </div>

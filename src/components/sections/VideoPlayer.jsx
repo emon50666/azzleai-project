@@ -1,114 +1,91 @@
-import { useState } from "react";
-import PlayerImage from "../../assets/images/funfact-image.jpg";
-import AnimatonVariants from "../shared/AnimatonVariants";
 
-const VideoPlayer = ({ isGradient }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
+import bg_1 from "../../assets/images/bg-1.jpg"
+import bg_2 from "../../assets/images/bg-2.png"
+import bg_3 from "../../assets/images/bg-3.png"
+
+
+const slides = [
+  {
+    id: 1,
+    title: "Decentralized Onboarding",
+    description:
+      "Users can connect with any EVM-compatible Web3 wallet. Initial setup ensures transparency and control from day one. % of people onboarded till now . % of people using social media.",
+    image:bg_1,
+  },
+  {
+    id: 2,
+    title: "Intelligent Content Creation ",
+    description:
+      "AI-enhanced content creation and sharing. AI-enhanced content creation and sharing",
+    image: bg_2,
+  },
+  {
+    id: 3,
+    title: "Trustworthy Reward & Monetization",
+    description:
+      "HVT enables direct, authentic creator compensation. No intermediaries; users keep full rewards",
+    image: bg_3,
+  },
+  {
+    id: 4,
+    title: "Continuous Governance & Growth",
+    description:
+      "Users propose and vote via decentralized governance. Ecosystem grows through user participation and value",
+    image: bg_1,
+  },
+];
+
+const VideoPlayer = () => {
   return (
-    <section className="bg-white lg:py-24 py-15 relative overflow-hidden">
+    <section className="bg-black container rounded-4xl mt-10 mx-auto relative overflow-hidden py-20 lg:py-32">
       {/* Gradient Background */}
-      <AnimatonVariants>
-        {isGradient && (
-          <>
-            <div className="orange-gradient-1 absolute top-[400px] h-[400px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-2 hidden lg:block"></div>
-            <div className="orange-gradient-1 absolute top-[300px] h-[600px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-2 hidden lg:block"></div>
-          </>
-        )}
+      {/* <div className="orange-gradient-1 absolute top-[400px] h-[400px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-2 hidden lg:block"></div>
+      <div className="orange-gradient-1 absolute top-[300px] h-[600px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-2 hidden lg:block"></div> */}
 
-        {/* Main Content */}
-        <div className="mx-auto max-w-[1500px] sm:px-5 px-2 ">
-          <div className="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]">
-            {/* Image and Button */}
-            <div className="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
-              <img
-                src={PlayerImage}
-                alt="funfact"
-                className="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full relative z-10"
-              />
-              <button
-                className="absolute left-1/2 top-1/2 z-[20] -translate-x-1/2 -translate-y-1/2"
-                onClick={() => setIsPlaying(true)}
-              >
-                <div className="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-red-500 hover:text-white">
-                  Play
-                  <div className="absolute -z-[1] h-[110%] w-[110%] animate-ping rounded-full bg-gray-600 opacity-30"></div>
+      {/* Swiper Slider */}
+      <Swiper
+       
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+           
+        }}
+        loop={true}
+        className="w-full max-w-5xl mx-auto px-4"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div className="flex flex-col px-5 md:flex-row items-center gap-10">
+              {/* Text Content */}
+              <div className="w-full md:w-1/2 text-white">
+                <div className="text-sm font-medium bg-transparent text-gray-500 border border-gray-800 rounded-md w-fit px-3 py-1 mb-4">
+                  {String(slide.id).padStart(2, "0")}
                 </div>
-              </button>
-            </div>
+                <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+                  {slide.title}
+                </h2>
+                <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                  {slide.description}
+                </p>
+              </div>
 
-            {/* Text Content */}
-            <div className="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28">
-              <h2 className="text-white text-[36px] leading-[40px] lg:text-4xl font-bold font-secondary lg:text-[80px] lg:leading-20 ">
-                AI-powered that streamline tasks
-              </h2>
-              <p className="text-white mt-6 text-lg lg:text-[21px] font-primary">
-                As your business grows or your AI SaaS needs change, you can
-                easily adjust your subscription level to match those needs.
-              </p>
-              <div className="my-14 h-[1px] w-full bg-neutral-800" />
-              <ul className="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xxl:gap-x-20">
-                <li>
-                  <h3 className="text-5xl text-[#fe330a] md:text-6xl lg:text-8xl xxl:text-[120px] font-bold font-secondary">
-                    92%
-                  </h3>
-                  <span className="block text-lg text-white lg:text-[21px] font-primary">
-                    Customer service inquiries
-                  </span>
-                </li>
-                <li>
-                  <h3 className="text-5xl text-[#fe330a] md:text-6xl lg:text-8xl xxl:text-[120px] font-bold font-secondary">
-                    75%
-                  </h3>
-                  <span className="block text-lg text-white lg:text-[21px] font-primary">
-                    Using financial institutions
-                  </span>
-                </li>
-              </ul>
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full rounded-2xl"
+                />
+              </div>
             </div>
-          </div>
-        </div>
-      </AnimatonVariants>
-      {/* Video Modal */}
-      {isPlaying && (
-        <div className="fixed inset-0 z-[999] bg-black bg-opacity-80 flex items-center justify-center px-4">
-          <div className="relative w-full max-w-[1200px]">
-            <button
-              onClick={() => setIsPlaying(false)}
-              className="
-          absolute 
-          -top-10 
-          right-0 
-          text-white 
-          text-4xl 
-          font-bold 
-          z-50
-          md:-top-12
-          md:right-[-40px]
-          rounded-full
-          bg-black
-          p-2
-          shadow-lg
-          hover:bg-red-600
-          transition-colors
-          duration-300
-        "
-            >
-              &times;
-            </button>
-            <iframe
-              width="100%"
-              height="700"
-              src="https://www.youtube.com/embed/3nQNiWdeH2Q?autoplay=1"
-              title="YouTube video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="rounded-lg"
-            ></iframe>
-          </div>
-        </div>
-      )}
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

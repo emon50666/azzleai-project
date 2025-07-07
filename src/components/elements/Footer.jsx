@@ -20,7 +20,7 @@ const Footer = () => {
       <MaxWidthWrapper>
         <div>
           <div className="h-[1px] w-full bg-[#DBD6CF]"></div>
-          <div className="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+          <div className="lg grid grid-cols-1 gap-10 py-[60px] lg:grid-cols-5 md:grid-cols-3 xl:grid-cols-5 xl:gap-20 xl:py-[100px]">
             {/* Logo & Description */}
             <div className="flex flex-col gap-y-6">
               <a href="/" className="inline-block">
@@ -113,29 +113,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Newsletter */}
-            <div className="flex flex-col gap-y-6">
-              <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Subscribe to our newsletter
-              </h4>
-              <form>
-                <div className="relative h-[50px] max-w-[300px]">
-                  <input
-                    type="email"
-                    name="newsletter-email"
-                    id="newsletter-email"
-                    placeholder="Enter your email"
-                    className="h-full w-full rounded-[50px] border border-black px-[24px] pr-20 outline-none"
-                  />
-                  <button
-                    type="submit"
-                    className="absolute right-[5px] top-1/2 -translate-y-1/2 inline-block h-10 rounded-[50px] bg-[#298DED] px-6 transition-all hover:bg-[#030F16] "
-                  >
-                    <img src={arrowRight} alt="submit" />
-                  </button>
-                </div>
-              </form>
-            </div>
+            
           </div>
 
           <div className="h-[1px] w-full bg-[#DBD6CF]"></div>

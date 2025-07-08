@@ -12,14 +12,14 @@ import { footerGetInvolvedPages } from "../../utils/constants";
 
 const Footer = () => {
   return (
-    <footer className="relative z-[1] -mt-[150px] overflow-hidden rounded-tl-[30px] rounded-tr-[35px] bg-[#F5F3EE] lg:rounded-tl-[50px] lg:rounded-tr-[38px]">
+    <footer className="relative z-[1] -mt-[150px] overflow-hidden rounded-tl-[30px] rounded-tr-[35px] bg-[#f2f8ff] lg:rounded-tl-[50px] lg:rounded-tr-[38px]">
       {/* Footer top */}
       <FooterTop />
 
       {/* Footer Main Content */}
       <MaxWidthWrapper>
         <div>
-          <div className="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <div className="h-[1px] w-full bg-[#f2f8ff]"></div>
           <div className="lg grid grid-cols-1 gap-10 py-[60px] lg:grid-cols-5 md:grid-cols-3 xl:grid-cols-5 xl:gap-20 xl:py-[100px]">
             {/* Logo & Description */}
             <div className="flex flex-col gap-y-6">

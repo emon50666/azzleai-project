@@ -7,7 +7,7 @@ import AnimatonVariants from "../shared/AnimatonVariants";
 
 const HeroSection = () => {
   return (
-    <section className="py-20 bg-[#efeae3] relative overflow-clip rounded-b-[50px] md:rounded-b-0 z-5">
+    <section className="py-20 bg-[#f2f8ff] relative overflow-clip rounded-b-[50px] md:rounded-b-0 z-5">
       <div className="orange-gradient-1 absolute -right-[150px] top-[300px] -z-[1] h-[500px] w-[500px] rounded-[500px]"></div>
       <div className="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] rounded-[450px]"></div>
       <MaxWidthWrapper className="lg:px-8">
